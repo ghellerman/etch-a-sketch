@@ -1,10 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+:root {
+    --primary-dark: rgb(22, 22, 22);
+    --primary-light: #edededcc;
+    --secondary-light: #fefefec7;
+  }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    line-height:1.5em;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    padding-top:50px;
 }
