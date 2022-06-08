@@ -1,7 +1,7 @@
 :root {
-    --primary-dark: rgb(22, 22, 22);
-    --primary-light: #edededcc;
-    --secondary-light: #fefefec7;
+    --primary-dark: #000000;
+    --primary-light: #ffffff;
+    --secondary-light: #f2f2f2;
   }
 
 *,
@@ -21,5 +21,42 @@ body {
 .title {
     text-align: center;
     font-size: 5rem;
-    padding-top:50px;
+    padding:50px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 200px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.grid {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    background-color: var(--secondary-light);
+    border: 1px solid black;
+}
+
+.grid-element {
+    user-select: none;
+    border: 0.1px solid hsl(0, 0%, 85%);
 }
